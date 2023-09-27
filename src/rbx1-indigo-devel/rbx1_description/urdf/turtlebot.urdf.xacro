@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+
+<robot name="turtlebot"  xmlns:xacro="http://ros.org/wiki/xacro">
+      
+  <!-- <property name="M_PI" value="3.14159"/>
+  <property name="SCALE" value="0.0254"/> -->
+  <xacro:include filename="$(find rbx1_description)/urdf/turtlebot_hardware.urdf.xacro" />
+  <xacro:include filename="$(find rbx1_description)/urdf/turtlebot_body.urdf.xacro" />
+  <xacro:include filename="$(find rbx1_description)/urdf/turtlebot_calibration.xacro" />
+  <xacro:include filename="$(find rbx1_description)/urdf/turtlebot_kinect.urdf.xacro" />
+
+
+
+  <!-- Body of TurtleBot, with plates, standoffs and Create (including sim sensors) -->
+  <!-- <turtlebot_body/> -->
+  
+  <!-- Kinect frames and mounting (includes simulation) -->
+  <!-- <turtlebot_kinect/> -->
+</robot>
